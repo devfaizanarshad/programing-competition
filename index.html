@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hacker Events</title>
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap" rel="stylesheet">
+    <!-- STYLE -->
+    <link rel="stylesheet" href="main.css" type="text/css"> 
+</head>
+<body>
+
+    <nav>
+        <header>
+            <h1 class="hacker">Hacker</h1><span><h1>EVENTS</h1></span>            
+        </header>
+
+        <i class="fa coffee-menu" id="coffee-menu">&#xf0f4;</i>
+  
+        <section id="nav" class="nav" hidden>
+            <i class='fas arrow-close' id="arrow-close">&#xf061;</i>
+
+            <div class="open-nav"> 
+                <button onclick="whatsHackathonFunction()"><span>What's</span> HACKATHON</button>
+                <button onclick="getInspired()">Get Inspired</button>
+            </div>
+        </section>                     
+    </nav>
+
+    <div class="hero">
+        <img src="images/background-img.png" alt="background-image" class="background-image">
+
+        <section class="headline">
+            <h1>Browse All<br> Hackathon<br> Events here</h1>
+        </section>    
+    </div>
+
+    <main>
+
+        <h3>Find all hackathons around the world.</h3>
+
+        <form>
+            <label for="js-search-input">
+                <input type="text" name="search-input" placeholder="e.g. Boston" class="search-input" id="js-search-input">
+            </label>
+
+            <input type="submit" value="SEARCH" class="submit-button">
+            
+            <input type="range" min="1" max="100" value="8" class="slider" id="js-slider">
+            
+            <p>within <span id="js-within-value"></span> mi</p>
+        </form>
+
+        <div id="js-unabled-location" class="unabled-location"></div>
+
+        <section class="background-purple upcoming" id="js-scroll-results">
+            <h4>Upcoming</h4>
+            <div id="js-error-message"></div>
+
+            <section class="event-results" id="js-event-results"></section>   
+        </section>
+
+        <section class="whats-hackathon" id="whats-hackathon">
+            <img src="images/whats-hackathon.png" alt="whats-hackathon" class="whats-hackathon-img">
+
+            <section class="whats-hackathon-copy">
+                <h4 class="span-heading"><span>What's</span> HACKATHON</h4>        
+                <p class="whats-hackathon-desc">A hackathon is a design sprint-like event in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, and others, often including domain experts, collaborate intensively on software projects.</p>
+            </section>
+            
+        </section>
+
+        <section class="background-purple learn-how" id="youtube-results">
+            <h4 class="learn">Get Inspired</h4>
+            <div id="js-youtube-error-message"></div>
+
+            <div class="youtube-results" id="js-youtube-results"></div>   
+
+            <section class="players">
+                <div class="player" id="player0"></div>
+                <div class="player" id="player1"></div>
+                <div class="player" id="player2"></div>
+                <div class="player" id="player3"></div>
+                <div class="player" id="player4"></div>
+                <div class="player" id="player5"></div>
+                <div class="player" id="player6"></div>
+                <div class="player" id="player7"></div>                
+            </section>
+        </section>
+    </main>
+
+    <button onclick="topFunction()" id="scroll-to-top" title="Go to top"><i class='fas fa-arrow-up'></i></button>
+
+    <footer>2019 Copyright</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
